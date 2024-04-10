@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto cafeteria</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lemon&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="js/script.js" defer></script>
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    
+    <header class="Header Header__background ">
+        <section class="header__section">
+        <picture class="header__picture">
+            <img src="img/logo_img.png" alt="logo_pawffee" class="header__logo-pawffee">
+            <img src="img/logo_letra.png" alt="logo_pawffee_letra" class="header__logo-pawffee-word">
+        </picture>
+        <!-- NAVEGADOR -->
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li><a href="index.html" title="Inicio">Inicio</a></li>
+                <li><a href="index _carta.html" title="Carta">Carta</a></li>
+                <li><a href="#section__reservar" title="Reserva aquí">Reservar</a></li>
+                <li><a href="index _adopt.html" title="Adoptar">Adoptar</a></li>
+            </ul>
+        </nav>
+         </section>
+        <h1 class="header__h1 header__line-decoration">Un café que deja huella</h1>
+        <a href="#section__reservar"><input type="button" value="Reserva tu mesa" class="header__btn"></a>
+        <div class="Header__background"></div>
+        <div class="header__div"></div>
+    </header>
+    <main>
+        <!-- PRIMERA SECCIÓN -->
+        <section>
+            <article class="section__article">
+                <picture>
+                    <img src="img/cafe_granos.png" alt="coffe_grain" class="section__img--grain">
+                </picture>
+                <h2>Llega a Valencia Pawffee</h2>
+                <!-- CARRUSEL -->
+                <p>Pawffee es el cat café donde podrás conocer a nuestros gatos. Además, si te enamoras de alguno de ellos, allí mismo podrás iniciar su proceso de adopción.
+                </p>
+                <br>
+                <p>
+                    
+                    Como te imaginarás, para crear nuestro cat café nos hemos inspirado en la cultura japonesa, ¡pero le hemos dado un toque muy personal!
+                    Aquí siempre serán ellos los protagonistas y tú su invitado. Por ello cada pequeño rincón está dedicado a que disfruten y se sientan cómodos. Tendrás que ganártelos desde el respeto para que sean ellos los que te den permiso para interactuar. Te enseñaremos a leer sus señales, a descubrir qué les gusta y qué les disgusta… Siempre estaremos cerca para que puedas preguntarnos cualquier duda. 
+        
+                    En nuestro Cat Café encontrarás a los felinos más especiales. Aquellos que parecen invisibles a la sociedad: los normales, que no destacan demasiado, que tienen más años de los que desean las familias e, incluso, con alguna complicación médica o minusvalía.</p>
+            </article>
+
+        </section>
+        <section>
+            <article id="section__reservar">
+                <h2>Reserva ahora</h2>
+                <img src="img/flecha.png" alt="">
+            </article>
+            <article class="article__form">
+                <form action="#">
+                    <input type="date" name="date" id="date">
+                    <label for="time">Hora: </label>
+                    <select name="time" id="time">
+                        <option>Elige una hora</option>
+                        <option value="first-hour">12:30</option>
+                        <option value="second-hour">12:45</option>
+                        <option value="third-hour">13:00</option>
+                    <label for="name">Nombre: </label>
+                    <input type="text" name="name" id="name">
+                    <label for="last-name">Apellidos: </label>
+                    <input type="text" name="last-name" id="last-name">
+                    <label for="phone">Teléfono: </label>
+                    <input type="text" name="number" id="number">
+                    <label for="email">Correo: </label>
+                    <input type="email" name="email" id="email">
+                    <input type="radio" name="terms" id="terms">
+                    <label for="radio">Acepto los términos y condiciones</label>
+                    <input type="button" value="Enviar">
+                </form>
+            </article>
+        </section>
+        <section>
+            <article class="article__location">
+                <h2>Dónde estamos</h2>
+                <p>Nos puedes encontrar en:</p>
+                <img src="img/ubi_icon.png" alt="icon_location" srcset="">
+                <p>Av. del Primat Reig, 189, Benimaclet, 46020 València, Valencia</p>
+                <img src="img/social_icon.png" alt="icon_telf">
+                <p>960 30 25 16</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24636.17810239273!2d-0.37665358595862586!3d39.48012017909595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f49cc253387%3A0xa7be35bdeeb341d2!2sCEI%20Centro%20de%20Estudios%20Innovaci%C3%B3n.%20Cursos%20y%20masters%20de%20dise%C3%B1o%2C%20interiores%2C%20web%2C%20videojuegos%2C%20cloud%2C%20data%20y%20marketing%20digital!5e0!3m2!1ses!2ses!4v1711283785062!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+        </section>
+        <footer>
+            <section class="footer_section">
+            <nav class="footer_nav">
+                <ul class="footer_ul">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index _carta.html">Carta</a></li>
+                    <li><a href="#section__reservar">Reservar</a></li>
+                    <li><a href="index _adopt.html">Adoptar</a></li>
+                </ul>
+            </nav>
+            <picture class="footer_picture">
+                <img src="img/logo_img.png" alt="logo_pawffee" class="footer__logo-pawffee">
+                <img src="img/logo_letra.png" alt="logo_pawffee_letra" class="footer__logo-pawffee-word">
+            </picture>
+        </section>
+        </footer>
+    </main>
+</body>
+
+</html>

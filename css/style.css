@@ -1,0 +1,315 @@
+/* RESET */
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+  }
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* VARIABLES */
+
+:root {
+  --color-white: #ffffff;
+  --color-black: #000;
+  --color-beige: #F2E3D5;
+  --color-soft-brown: #CD985C;
+  --color-brown: #3C271C;
+  --color-orange: #A2603A;
+  --color-green: #A7A958;
+  --size-0: clamp(0.5rem, 0.0229rem + 1.5267vw, 0.75rem);
+  --size-1: clamp(1rem, 0.9518rem + 0.9542vw, 1.5625rem);
+  --size-2: clamp(1.5rem, 0.0687rem + 4.5802vw, 3rem);
+  --size-header: clamp(2rem, 0.0916rem + 6.1069vw, 4rem);
+}
+
+
+
+/* INICIO */
+
+body {
+  background-color: var(--color-brown);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: var(--size-0);
+  color: var(--color-beige);
+  width: 50%;
+}
+
+.Header {
+  background-image: url('../img/gato_portada.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  
+
+}
+/* PÁGINA PRINCIPAL */
+
+/* NAVEGADOR */
+
+.header__div {
+  background-color: rgba(205, 152, 92, 0.7);
+  width: 100vw;
+  display: block;
+}
+
+.header__picture img {
+  width: 30%;
+}
+
+.header__picture {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.header__section, .footer_section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(205, 152, 92, 0.7);
+  padding: 1rem;
+}
+
+.header__nav, .footer_nav {
+  font-family: 'Indie flower', Arial, sans-serif;
+}
+
+.header__ul, .footer_ul {
+  gap: 4rem;
+}
+
+a:hover {
+  color: var(--color-orange);
+}
+
+h1 {
+  font-size: var(--size-header);
+  font-family: 'Lemon', sans-serif;
+  color: var(--color-brown);
+  padding: 1rem;
+  margin: 1rem;
+  width: 75%;
+  position: relative;
+}
+
+.header__line-decoration::before {
+  width: 15rem;
+  background-color: var(--color-orange);
+  content: "";
+  position: absolute;
+  height: 0.2rem;
+  bottom: 5%;
+}
+
+.header__btn{
+
+  font-family: 'Lemon', sans-serif;
+  font-size: var(--size-1);
+  color: var(--color-brown);
+  background-color: var(--color-beige);
+  padding: 1rem;
+  border-radius: .5rem;
+  align-items: center;
+  cursor: pointer;
+  border: solid 2px var(--color-brown);
+  margin: 1rem;
+  }
+  
+  .header__btn:hover{
+  background-color: var(--color-beige);
+  color: var(--color-orange);
+  border: solid 2px #9c6b4c;
+  }
+
+  .header__logo-pawffee, .footer__logo-pawffee, .header__logo-pawffee-word, .footer__logo-pawffee-word {
+    width: 15%;
+  }
+
+
+/* SECCIÓN CARRUSEL */
+
+main {
+  z-index: 1;
+}
+
+.section__article {
+  margin-left: 1rem;
+}
+
+h2 {
+  font-size: var(--size-2);
+  font-family: 'Lemon', sans-serif;
+  color: var(--color-beige);
+  margin: 0 auto;
+}
+
+.section__img--grain {
+  z-index: -1;
+  position: relative;
+  display: inline-block;
+  width: 30%;
+  opacity: 0.5;
+}
+
+/* GALERIA */
+
+.div__gallery {
+  display: grid;
+  grid-template-columns: repeat(1, 10rem);
+  grid-template-rows: repeat(1, 10rem);
+  grid-gap: 15px;
+  justify-content: center;
+  justify-items: center;
+  background-color: var(--color-orange);
+}
+
+.div__figure img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* FORM */
+
+.article__form {
+  background-color: var(--color-beige);
+
+}
+
+.article__form form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* LOCALIZACIÓN */
+
+.article__location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.article__location img  {
+  width: 2rem;
+}
+
+
+/* FOOTER */
+
+/* PÁGINA FORMULARIO ADOPCIÓN */
+
+.Header__adopt {
+  background-image: url('../img/gato_form.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.header__h2 {
+  font-size: var(--size-1);
+  color: var(--color-orange);
+  width: 50%;
+  margin: 2rem;
+}
+
+.section__main {
+  background-color: var(--color-brown);
+}
+
+.article__form--adopt form{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: var(--color-green);
+  padding: 1rem;
+}
+/* MEDIA QUERY ORDENADORES Y TABLETS GRANDES */
+
+  @media only screen and (min-width: 720px) {
+
+    /* PÁGINA PRINCIPAL */
+
+    .header__picture, .footer_picture {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+    .header__section, .footer_section {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      background-color: rgba(205, 152, 92, 0.6);
+      padding: 1rem;
+    }
+
+    .header__ul, .footer_ul {
+      display: flex;
+      flex-direction: row;
+      font-size: var(--size-1);
+      line-height: 3.5rem;
+    }
+      
+    h1 {
+      width: 50%; 
+      position: relative;
+    }
+
+    .header__line-decoration::before {
+      width: 25rem;
+      background-color: var(--color-orange);
+      content: "";
+      position: absolute;
+      height: 0.4rem;
+    }
+
+    /* GALERIA */
+    .div__gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 15rem);
+      grid-template-rows: repeat(2, 15rem);
+      justify-content: start;
+      grid-gap: 15px;
+    }
+    
+    .div__figure img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    /* PÁGINA ADOPCIÓN */
+
+    .article__form--adopt form{
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      background-color: var(--color-green);
+      padding: 6rem;
+    }
+  }
