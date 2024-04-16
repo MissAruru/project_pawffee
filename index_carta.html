@@ -1,0 +1,155 @@
+<!-- 
+    Descripción: Este archivo HTML contiene una página secundaria de la web, en concreto, la sección de la carta. Esta web contiene la siguiente estructura:
+    - Encabezado con barra de navegación
+    - Contenido principal
+    - Pie de página.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Descubre Pawffee, el cat café proveniente de la cultura japonesa. ¡Ven a visitarnos!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final Pawffee - Carta</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lemon&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+     <!-- Sección Header
+    En esta sección tenemos la barra de navegación compuesta del logotipo junto a la navegación del sitio. -->
+    <header>
+        <section class="header__section">
+            <article class="header__article">
+                <picture class="header__picture">
+                    <img src="img/logo_img.svg" alt="logo_pawffee" class="header__logo-pawffee">
+                </picture>
+                <picture class="header__picture">
+                    <img src="img/Pawffee-logo-letra.webp" alt="logo_pawffee_letra" class="header__logo-pawffee-word">
+                </picture>
+            </article>
+            <!-- Navegador
+                El navegador está compuesto de 4 elementos, los cuales 2 de ellos se encuentran en este mismo documento HTML. -->
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li><a href="index.html" title="Inicio">Inicio</a></li>
+                    <li><a href="index_carta.html" title="Carta">Carta</a></li>
+                    <li><a href="index.html#article__reservar" title="Reserva aquí">Reservar</a></li>
+                    <li><a href="index_adopt.html" title="Adoptar">Adoptar</a></li>
+                </ul>
+            </nav>
+         </section>
+    </header>
+    <main>
+        <!-- Primera sección: menú de la web dividia en bebidas y postres -->
+        <section class="section__menu">
+            <h2>Carta</h2>
+            <article class="section__article--menu">
+                <!-- Primera sección: Bebidas -->
+                <h2>Bebidas</h2>
+                <div class="div__gallery">
+                    <figure class="div__figure">
+                        <img src="img/cafe_solo_1.webp" alt="cafe_solo">
+                        <figcaption>Café solo - 1.20€</figcaption>
+                    </figure>
+                    <figure class="div__figure">
+                        <img src="img/cafe_latte_2.webp" alt="cafe_latte">
+                        <figcaption>Café latte - 1.70€</figcaption>
+                    </figure>
+                    <figure class="div__figure">
+                        <img src="img/capuccino_3.webp" alt="cafe_cappuccino">
+                        <figcaption>Cappuccino - 1.70€</figcaption>
+                    </figure>
+                    <figure class="div__figure">
+                        <img src="img/milk_tea5.webp" alt="te-con-leche">
+                        <figcaption>Té con leche - 1.50€</figcaption>
+                    </figure>
+                    <figure class="div__figure">
+                        <img src="img/mocca_4.webp" alt="cafe_mocca">
+                        <figcaption>Mocca - 2€</figcaption>
+                    </figure>
+                    <figure class="div__figure">
+                        <img src="img/cafe_leche-5.webp" alt="cafe_con_leche">
+                        <figcaption>Café con leche - 1.90€</figcaption>
+                    </figure>
+                    <figure class="div__figure">
+                        <img src="img/roiboos_8.webp" alt="infusion_roiboos">
+                        <figcaption>Infusión roiboos - 2€</figcaption>
+                    </figure>
+                    <figure class="div__figure">
+                        <img src="img/tea.webp" alt="te">
+                        <figcaption>Té - 1.30€</figcaption>
+                    </figure>
+                </div>
+                <!-- Primera sección: Postres -->
+                <h2>Postres</h2>
+                <div class="div__gallery">
+                    <figure class="div__figure">
+                        <img src="img/brownie_6.webp" alt="brownie">
+                        <figcaption>Brownie con nueces - 3€</figcaption>
+                    </figure>
+                    <figure class="div__figure">
+                        <img src="img/banoffee.webp" alt="cheesecake">
+                        <figcaption>Tarta de Banoffee - 3€</figcaption>
+                    </figure>
+                    <figure class="div__figure">
+                        <img src="img/pancake_9.webp" alt="pancakes">
+                        <figcaption>Pancakes - 2.50€</figcaption>
+                    </figure>
+                    <figure class="div__figure">
+                        <img src="img/macarons.webp" alt="macarons">
+                        <figcaption>Macarons - 1.50€</figcaption>
+                    </figure>
+                    <figure class="div__figure">
+                        <img src="img/tiramisu.webp" alt="tiramisu">
+                        <figcaption>Tiramisú - 2€</figcaption>
+                    </figure>
+                    <figure class="div__figure">
+                        <img src="img/waffles_7.webp" alt="waffles">
+                        <figcaption>Gofre con chocolate 2€</figcaption>
+                    </figure>
+                    <figure class="div__figure">
+                        <img src="img/redvelvet.webp" alt="red_velvet">
+                        <figcaption>Red velvet cake 2.75€</figcaption>
+                    </figure>
+                    <figure class="div__figure">
+                        <img src="img/cheesecake.webp" alt="cheesecake">
+                        <figcaption>Cheesecake - 2.75€</figcaption>
+                    </figure>
+                </div>
+            </article>
+        </section>
+        <!-- Footer: al igual que en el header, el footer se compone de logotipo y links <a> para navegar fácilmente por la web. -->
+        <footer>
+            <section class="footer__section">
+                <nav class="footer__nav">
+                    <ul class="footer__ul">
+                        <li><a href="index.html" title="Inicio">Inicio</a></li>
+                        <li><a href="index_carta.html" title="Carta">Carta</a></li>
+                        <li><a href="index.html#article__reservar" title="Reserva aquí">Reservar</a></li>
+                        <li><a href="index_adopt.html" title="Adoptar">Adoptar</a></li>
+                    </ul>
+                </nav>
+                <article class="footer__article">
+                    <picture class="footer__picture">
+                        <img src="img/logo_img.svg" alt="logo_pawffee" class="footer__logo-pawffee">
+                    </picture>
+                    <picture class="footer__picture">
+                        <img src="img/Pawffee-logo-letra.webp" alt="logo_pawffee_letra"
+                            class="footer__logo-pawffee-word">
+                    </picture>
+                </article>
+            </section>
+        </footer>
+    </main>
+</body>
+
+</html>
