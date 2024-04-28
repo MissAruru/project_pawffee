@@ -1,3 +1,12 @@
+/* Este Script contiene:
+
+- Carrusel de imágenes
+- Menú hamburguesa para dispositivos móviles
+
+*/ 
+
+// Carrusel de imágenes
+
 const sliderNext = document.querySelector('.div__slider-arrow--next');
 const sliderPrev = document.querySelector('.div__slider-arrow--prev');
 const sliderBtn = document.querySelectorAll('.div__slider-btn');
@@ -42,29 +51,14 @@ sliderPrev.addEventListener('click', () => {
     mostrarImagen();
 });
 
-
-
-
-
-
 // Menú hamburguesa
 
-document.querySelector(".bars__menu").addEventListener("click", animateBars);
+const headerBtn = document.querySelector('.bars__menu')
+const headerNav = document.querySelector('.header__nav')
 
-var line1__bars = document.querySelector(".line1__bars-menu");
-var line2__bars = document.querySelector(".line2__bars-menu");
-var line3__bars = document.querySelector(".line3__bars-menu");
-
-function animateBars(){
-    line1__bars.classList.toggle("activeline1__bars-menu");
-    line2__bars.classList.toggle("activeline2__bars-menu");
-    line3__bars.classList.toggle("activeline3__bars-menu");
-
-    const headerNav = document.querySelector('.header__nav');
-    
-    if (headerNav.style.display === 'none' || headerNav.style.display === '') {
-        headerNav.style.display = 'block';
-    } else {
-        headerNav.style.display = 'none';
-    }
-}
+console.log(headerBtn)
+console.log(headerNav)
+headerBtn.addEventListener("click", function(){
+    headerNav.classList.toggle('isActive');
+    headerBtn.classList.toggle('change');
+})
