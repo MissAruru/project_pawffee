@@ -1,3 +1,10 @@
+<!-- 
+    Descripción: Este archivo HTML contiene una página secundaria de la web, en concreto, la sección de la carta. Esta web contiene la siguiente estructura:
+    - Encabezado con barra de navegación
+    - Contenido principal
+    - Pie de página.
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,6 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto final Pawffee - adopción</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lemon&display=swap" rel="stylesheet">
@@ -23,22 +31,29 @@
         <section class="header__section">
             <article class="header__article">
                 <picture class="header__picture">
-                    <img src="img/logo_img.svg" alt="logo_pawffee" class="header__logo-pawffee">
+                    <img src="img/logo_img.svg" alt="logo_pawffee" class="header__logo--pawffee">
                 </picture>
                 <picture class="header__picture">
-                    <img src="img/Pawffee-logo-letra.webp" alt="logo_pawffee_letra" class="header__logo-pawffee-word">
+                    <img src="img/Pawffee-logo-letra.webp" alt="logo_pawffee_letra" class="header__logo--pawffee-word">
                 </picture>
             </article>
-             <!-- Navegador
-                El navegador está compuesto de 4 elementos, los cuales 2 de ellos se encuentran en este mismo documento HTML. -->
-            <nav class="header__nav">
-                <ul class="header__ul">
-                    <li><a href="index.html" title="Inicio">Inicio</a></li>
-                    <li><a href="index_carta.html" title="Carta">Carta</a></li>
-                    <li><a href="index.html#article__reservar" title="Reserva aquí">Reservar</a></li>
-                    <li><a href="index_adopt.html" title="Adoptar">Adoptar</a></li>
-                </ul>
-            </nav>
+            <article class="header__article--nav">
+                    <div class="div__bars--menu">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <!-- Navegador
+                    El navegador está compuesto de 4 posibles rutas, las cuales 2 de ellas se encuentran en este mismo documento HTML. -->
+                    <nav class="header__nav">
+                        <ul class="header__ul">
+                            <li><a href="index.html" title="Inicio">Inicio</a></li>
+                            <li><a href="index_carta.html" title="Carta">Carta</a></li>
+                            <li><a href="index.html#article__reservar" title="Reserva aquí">Reservar</a></li>
+                            <li><a href="index_adopt.html" title="Adoptar">Adoptar</a></li>
+                        </ul>
+                    </nav>
+                </article>
          </section>
         <h1 class="header__h1">Adopta una huella</h1>
         <h2 class="header__h2">Si estás interesado en adoptar algunos de nuestros felinos no dudes en ponerte en contacto con nosotros</h2>
@@ -50,26 +65,26 @@
                 <article class="article__form--adopt">
                     <form action="#">
                         <label for="name">Nombre: </label>
-                        <input type="text" name="name" id="name" placeholder="Nombre">
+                        <input type="text" name="name" id="name" placeholder="Nombre" required>
                         <label for="last-name">Apellidos: </label>
-                        <input type="text" name="last-name" id="last-name" placeholder="Apellidos">
+                        <input type="text" name="last-name" id="last-name" placeholder="Apellidos" required>
                         <label for="number">Teléfono: </label>
-                        <input type="text" name="number" id="number" placeholder="Teléfono">
+                        <input type="text" name="number" id="number" placeholder="Teléfono" required>
                         <label for="email">Correo: </label>
-                        <input type="email" name="email" id="email" placeholder="Correo">
+                        <input type="email" name="email" id="email" placeholder="Correo" required>
                         <label for="city">Ciudad: </label>
-                        <input type="text" name="city" id="city" placeholder="Escribe tu ciudad">
-                        <label for="animals">¿Tiene más animales en casa? En caso de ser así, indique cuantos y cuales </label>
-                        <input type="text" name="animals" id="animals" placeholder="Escribe aquí">
+                        <input type="text" name="city" id="city" placeholder="Escribe tu ciudad" required>
+                        <label for="animals">¿Tiene más animales en casa? En caso de ser así, indique cuantos y cuales. </label>
+                        <input type="text" name="animals" id="animals" placeholder="Escribe aquí" required>
                         <label for="allergy">¿Usted o algún miembro de su familia tiene una alergia? En caso de ser así, indicanos qué alergia.</label>
-                        <input type="text" name="allergy" id="allergy" placeholder="Escribe aquí">
+                        <input type="text" name="allergy" id="allergy" placeholder="Escribe aquí" required>
                         <label for="cats">Por favor, indique en cual de todos nuestros felinos está interesado.</label>
-                        <input type="text" name="cats" id="cats" placeholder="Nombre del gato">
+                        <input type="text" name="cats" id="cats" placeholder="Nombre del gato" required>
                         <div class="checkbox-container">
-                            <input type="checkbox" name="terms" id="terms" required="">
+                            <input type="checkbox" name="terms" id="terms" required>
                             <label for="terms" class="form__checkbox">Al hacer clic en "Enviar", aceptas la política de privacidad del local.</label>
                         </div>
-                        <input type="button" value="Enviar" class="form__adopt--button">
+                        <input type="submit" value="Enviar" class="form__adopt--button">
                     </form>
                 </article>
         </section>

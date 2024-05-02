@@ -25,15 +25,15 @@
         <section class="header__section">
             <article class="header__article">
                 <picture class="header__picture">
-                    <img src="img/logo_img.svg" alt="logo_pawffee" class="header__logo-pawffee" loading="lazy">
+                    <img src="img/logo_img.svg" alt="logo_pawffee" class="header__logo--pawffee" loading="lazy">
                 </picture>
                 <picture class="header__picture">
-                    <img src="img/Pawffee-logo-letra.webp" alt="logo_pawffee_letra" class="header__logo-pawffee-word"
+                    <img src="img/Pawffee-logo-letra.webp" alt="logo_pawffee_letra" class="header__logo--pawffee-word"
                         loading="lazy">
                 </picture>
             </article>
             <article class="header__article--nav">
-                <div class="bars__menu">
+                <div class="div__bars--menu">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
@@ -56,7 +56,7 @@
     <main>
         <!-- Primera seccion: introducción + carrusel de fotos -->
         <section class="parent">
-            <article class="section__article div2">
+            <article class="section__article area2">
                 <!-- Carrusel de fotos realizado con JavaScript -->
                 <div class="div__slider">
                     <div class="div__slider-container">
@@ -109,7 +109,7 @@
                         <input type="date" name="date" id="date" min="2024-04-09" max="2025-01-01" required>
                         <label for="time">Hora: </label>
                         <select name="time" id="time" required>
-                            <option></option>
+                            <option value="" disabled selected hidden>Selecciona una hora</option>
                             <option value="first-hour">12:30</option>
                             <option value="second-hour">12:45</option>
                             <option value="third-hour">13:00</option>
@@ -130,7 +130,7 @@
                         <label for="terms" class="form__checkbox">Al hacer clic en "Enviar", aceptas las políticas de
                             privacidad del local.</label>
                     </div>
-                    <input type="button" value="Enviar" class="form__button">
+                    <input type="submit" value="Enviar" class="form__button">
                 </form>
             </article>
         </section>
@@ -151,7 +151,7 @@
                         <img src="img/logo_img_soft_brown.svg" alt="logo_pawffee_soft_brown" loading="lazy">
                     </picture>
                 </div>
-                <div class="article__iframe">
+                <div>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24636.17810239273!2d-0.37665358595862586!3d39.48012017909595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f49cc253387%3A0xa7be35bdeeb341d2!2sCEI%20Centro%20de%20Estudios%20Innovaci%C3%B3n.%20Cursos%20y%20masters%20de%20dise%C3%B1o%2C%20interiores%2C%20web%2C%20videojuegos%2C%20cloud%2C%20data%20y%20marketing%20digital!5e0!3m2!1ses!2ses!4v1711283785062!5m2!1ses!2ses"
                         width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
@@ -174,7 +174,6 @@
                 </article>
                 <article class="footer__article">
                     <p><a href="#">Politica de Privacidad</a> - Pawffee © 2024</p>
-                    </picture>
                 </article>
             </section>
         </footer>
